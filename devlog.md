@@ -1,0 +1,6 @@
+# The idea
+The Schemes of Work (SoWs) of each subject is categorised and split by subject. To know what I need to get done in each week, I want them to be layed out by term and week. However, the SoW given by the school is a google doc which is unreliably difficult to read in code. Therefore, I chose to use an AI api to extract the information for me. This can be done for zero monetary cost as well since the SoWs are not updated very frequently and I can just re-run the code whenever there is an update, usually notified by my teachers.
+# Issues
+Before realising there was a compiled version of every subject's SoW, I need to sieve through very different formats of SoWs in either google documents or google spreadsheets. Hence, the use of AI became more important and used more tokens.
+Now that the SoW is all in one google document and in relatively similar formats, the AI should have an easier time extracting the information and the code does not need to get the text across multiple different google documents and spreadsheets.
+To work around the issue of low rate limits that the program kept exceeding, a chunking function was made to ensure that the requests are made below the Tokens per minute (TPM) of Groq.
