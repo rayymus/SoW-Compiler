@@ -10,8 +10,7 @@ from groq import Groq
 
 
 SCOPES = [
-    "https://www.googleapis.com/auth/documents.readonly",
-    "https://www.googleapis.com/auth/spreadsheets.readonly",
+    "https://www.googleapis.com/auth/documents.readonly"
 ]
 
 load_dotenv()
